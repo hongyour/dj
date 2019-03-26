@@ -1,0 +1,21 @@
+html, body, ul, ol, li, dl, dt, dd, button, h1, h2, h3, h4, h5, h6, p, fieldset, legend, figure, header {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul, ol li {
+  list-style: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }

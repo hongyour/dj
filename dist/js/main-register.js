@@ -1,0 +1,20 @@
+require.config({
+	paths:{
+		"jquery":"jquery-1.10.1.min",
+		"jquery-cookie":"jquery.cookie",
+		"parabola":"parabola",
+		"register":"register",
+		"submit":"submit",
+		"verify":"register_verify"
+	},
+	shim:{
+		"jquery-cookie":["jquery"],
+		"parabola":{
+			exports:"_"
+		}
+	}
+})
+
+require(["register"],function(register){
+	register.register();
+})

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/登录.css">
+</head>
+<script src="js/require.js" async="true" defer data-main="js/main-login"></script>
+<!-- <script>
+	window.onload = function(){
+		var oUsername = document.getElementById('username');
+		var oPsd = document.getElementById('password');
+		var oBtn = document.getElementById('sub');
+		oBtn.onclick = function(){
+			var str = `${oUsername.name}=${oUsername.value}&${oPsd.name}=${oPsd.value}`;
+			// alert(str);
+			ajax({
+				method:"post",
+				url:"php/login.php",
+				data:str,
+				success:function(data){
+					alert(data);
+				},
+				error:function(msg){
+					alert(msg);
+				}
+			})
+		}
+		
+	}
+</script> -->
+<body>
+	<div id="row">
+		<div id="left"><img src="https://account.djicdn.com/pc/static/img/3.61f61fa.jpg" alt=""></div>
+		<div id="right">
+			<div id="logo">
+				<a href="#"><img src="images/logo.svg"></a>
+			</div>
+			<div id="title">
+				<span>登录</span>
+			</div>
+			<!-- 验证 -->
+			<div id="txt">
+				<input type="text" name="email" placeholder="邮箱/手机*" id="username">
+				<span id="email-span"></span>
+			</div>
+			<div id="txt">
+				<input type="text" name="password" placeholder="密码*" id="password">
+				<b id="fpsd">忘记密码?</b>
+				<span id="psd-span"></span>
+			</div>
+			<!-- 按钮 -->
+			<button id="sub">登录</button>
+			<a href="注册.html" id="quick">注册DJI账号</a>
+
+			<!-- 微信登录 -->
+			<fieldset>
+				<legend align="center">或使用第三方账号登录</legend>
+			</fieldset>
+			<!-- 按钮 -->
+			<button id="WX">微信</button>
+		</div>
+	</div>
+	
+</body>
+</html>

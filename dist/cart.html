@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/clear.css">
+	<link rel="stylesheet" href="iconfont1/iconfont.css">
+	<script src="js/require.js" async="true" defer data-main="js/main-cart"></script>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<section>
+			<div class="logo1">
+				<img src="images/logo.svg">
+				<span>商城</span>
+			</div>
+			<div class="login">
+				<a href="登录.html">登录</a>
+				<a href="注册.html">注册</a>
+				<a href="#" class="last">中国大陆 (简体中文 / ¥ CNY)</a>
+			</div>
+		</section>
+	</header>
+
+	<article class="shop">
+		<section>
+			<div class="shop1">
+				<h1>我的购物车</h1>
+			</div>
+			<div class="shop2">
+				<span>登录后将显示您之前加入的商品。</span>
+				<a href="登录.html">立即登录 ></a>
+			</div>
+			<div class="shop3 clear">
+				<div class="shop-buy">
+					<ul class="clear">
+						<li>商品</li>
+						<li>价格</li>
+						<li>数量</li>
+						<li>小计</li>
+					</ul>
+				</div>
+				<div class="shop-buy1">
+					<input type="checkbox" id="wholeSelect">
+					<div class="shop-b1"></div>
+
+					
+				</div>
+			</div>
+			<div class="pay">
+				<section>
+					<article>
+						<i></i>
+						<div>
+							<p>购买即可获得价值支付金额1%的DJI币返利 - 购买越多，返利越多。</p>
+							<p><a href="#">了解更多优惠详情 ></a></p>
+						</div>
+					</article>
+					<article>
+						<i></i>
+						<div>
+							<p>有优惠券或者 DJI 币？</p>
+							<p>您可以在结账的时候使用优惠券或者DJI币抵扣。</p>
+						</div>
+					</article>
+				</section>
+				<section>
+					<article>
+						<div class="sum">
+							<span>总计（不包括运费）</span>
+							<span class="allTotal">¥0</span>元
+						</div>
+						<div>至少选择一个商品才能结算</div>
+						<div>加<a href="#">￥99</a> 包邮</div>
+						<div>支持支付宝、微信、银联、顺丰到付、花呗和招行分期。</div>
+
+					</article>
+				</section>
+			</div>
+			<div class="shop-b1"></div>
+			<div class="goon">
+				<button>继续购物</button>
+				<button id="oop">结算</button>
+			</div>
+		</section>
+	</article>
+
+	<!-- 推荐 -->
+	<div class="recommend">
+		<section>
+			<h2>为您推荐</h2>
+			<div class="aPro clear">
+				
+			</div>
+		</section>
+	</div>
+
+
+	<!-- 配送 -->
+	<section id="service" class="clear">
+		<div id="ser-mi">
+			<div id="delivery-Box">
+				<div id="delivery">
+					<p><img src="images/delivery.svg"></p>
+					<h4>全场满¥99顺丰包邮（顺丰无法配送的区域将使用EMS）</h4>
+				</div>
+			</div>
+			<!-- 2 -->
+			<div id="delivery-Box">
+				<div id="delivery">
+					<p><img src="images/post-card.svg"></p>
+					<h4>支持支付宝、微信、银联、顺丰到付、花呗和招行分期</h4>
+				</div>
+			</div>
+			<!-- 3 -->
+			<div id="delivery-Box">
+				<div id="delivery">
+					<p><img src="images/smile.svg"></p>
+					<h4>客服热线：400-700-0303</h4>
+				</div>
+			</div>
+			<!-- 4 -->
+			<div id="delivery-Box">
+				<div id="delivery">
+					<p><img src="images/secure.jpg"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- footer -->
+	<footer class="clear">
+		<div id="footer-Box" class="clear">
+			<div id="list">
+				<h3>商城热卖</h3>
+				<ul>
+					<li>"御" Mavic</li>
+					<li>"晓" Spark</li>
+					<li>精灵 Phantom</li>
+					<li>灵眸 Osmo</li>
+					<li>"悟" Inspire</li>
+					<li>如影 Ronin</li>
+					<li>DJI Care 随心换</li>
+				</ul>
+			</div>
+			<div id="list">
+				<h3>商城项目</h3>
+				<ul>
+					<li>优惠促销</li>
+					<li>翻新机</li>
+					<li>Select会员</li>
+					<li>教育折扣</li>
+					<li>企业采购</li>
+					<li>以旧换新</li>
+					<li>DJI 推广联盟</li>
+					<li>大疆商城 App</li>
+				</ul>
+			</div>
+			<div id="list">
+				<h3>购买指南</h3>
+				<ul>
+					<li>支付方式</li>
+					<li>订单帮助</li>
+					<li>发货和物流</li>
+					<li>退换货条款</li>
+					<li>技术支持</li>
+					<li>售后服务政策</li>
+					<li>DJI 币返利计划</li>
+				</ul>
+			</div>
+			<div id="list">
+				<h3>大疆社区</h3>
+				<ul>
+					<li>天空之城</li>
+					<li>DJI 论坛</li>
+					<li>购机指南</li>
+				</ul>
+			</div>
+			<!-- 订阅 -->
+			<div id="read">
+				<h3>订阅</h3>
+				<div id="text">第一时间了解我们的促销活动、热销产品和最新信息。</div>
+				<div id="email">
+					<input type="text" placeholder="请输入您的邮箱">
+					<button>></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 版权 -->
+		<div id="ban-Box" class="clear">
+			<div id="ban"  class="clear">
+				<img src="images/logo.svg" alt="">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">招聘精英</a></li>
+					<li><a href="#">官方旗舰店</a></li>
+				</ul>
+				<div id="font">
+					<i class="iconfont i1">&#xe793;</i>
+					<i class="iconfont i1">&#xe620;</i>
+					<i class="iconfont i1">&#xe656;</i>
+				</div>
+				
+			</div>
+			<div id="quan">
+				<span>Copyright © 2019 DJI 大疆创新 版权所有</span>
+				<ul>
+					<li><a href="#">隐私权政策</a>·</li>
+					<li><a href="#">使用条款</a>·</li>
+					<li><a href="#">粤ICP备12022215号-11</a>·</li>
+					<li><a href="#">营业执照</a>·</li>
+					<li><a href="#">网站地图</a></li>
+				</ul>
+				<b>网站问题反馈？<a href="#">点击这里</a></b>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

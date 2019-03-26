@@ -1,0 +1,20 @@
+require.config({
+	paths:{
+		"jquery":"jquery-1.10.1.min",
+		"jquery-cookie":"jquery.cookie",
+		"parabola":"parabola",
+		"recommend":"recommend",
+		"trolley":"trolley",
+		"care_car":"care_car"
+	},
+	shim:{
+		"jquery-cookie":["jquery"],
+		"parabola":{
+			exports:"_"
+		}
+	}
+})
+
+require(["cart"],function(cart){
+	cart.cart();
+})

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大疆无人机-注册</title>
+	<link rel="stylesheet" href="css/clear.css">
+	<link rel="stylesheet" href="css/注册.css">
+	<script src="js/require.js" async="true" defer data-main="js/main-register"></script>
+</head>
+<!-- <script>
+	window.onload = function(){
+		var oUsername = document.getElementById('username');
+		var oPsd = document.getElementById('password');
+		var oSpsd = document.getElementById('spsd');
+		var oBtn = document.getElementById('sub');
+		oBtn.onclick = function(){
+			var str = `${oUsername.name}=${oUsername.value}&${oPsd.name}=${oPsd.value}`;
+			// alert(str);
+			ajax({
+				method:"post",
+				url:"php/register.php",
+				data:str,
+				success:function(data){
+					alert(data);
+				},
+				error:function(msg){
+					alert(msg);
+				}
+			})
+		}
+		
+	}
+</script> -->
+<body>
+	<div id="row">
+		<div id="left">
+			<img src="https://account.djicdn.com/pc/static/img/1.e61fc72.jpg" alt="">
+		</div>
+		<div id="right">
+			<div id="logo">
+				<a href="#"><img src="images/logo.svg"></a>
+			</div>
+			<div id="title">
+				<span>注册</span>
+			</div>
+			<div id="register">
+				<div id="re-left">手机注册</div>
+				<div id="re-right">邮箱注册</div>
+			</div>
+
+			<!-- 验证 -->
+			<div id="txt">
+				<input type="text" name="email" placeholder="邮箱*" id="username">
+				<span id="email-span"></span>
+			</div>
+			<div id="txt">
+				<input type="text" name="password" placeholder="密码*" id="password">
+				<span id="psd-span"></span>
+				<ul id="change" class="clear">
+					<li class="psd_l1"></li>
+					<li class="psd_l2"></li>
+					<li class="psd_l3"></li>
+				</ul>
+			</div>
+			<div id="txt">
+				<input type="password" name="spassword" placeholder="确认密码*" id="spsd">
+				<span id="spsd-span"></span>
+			</div>
+			<!-- 按钮 -->
+			<button id="sub" style="cursor: pointer;">提交</button>
+			<a href="登录.html" id="quick">立即登录</a>
+		</div>
+	</div>
+</body>
+</html>
